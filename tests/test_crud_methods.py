@@ -57,3 +57,8 @@ def test_004_delete_brand(token):
     headers = {"Authorization": f"Bearer {token}"}
     response_delete = requests.delete(f"{URL}/brands/{brand_id}", headers=headers)
     assert response_delete.status_code == 204
+
+
+def test_xxx_will_pass():
+    assert True is True
+
