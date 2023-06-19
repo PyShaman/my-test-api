@@ -59,6 +59,14 @@ def test_004_delete_brand(token):
     assert response_delete.status_code == 204
 
 
-def test_xxx_will_pass():
+def test_005_will_pass():
     assert True is True
 
+
+def test_006_will_fail():
+    assert False is True
+
+
+@pytest.mark.skip()
+def test_007_this_test_is_skipped():
+    assert False is False
